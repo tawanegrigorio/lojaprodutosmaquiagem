@@ -1,0 +1,135 @@
+.site-footer {
+    padding: 0 4%;
+    background: #f8f4f6;
+    border-top: 1px solid #eadfe6;
+    color: #654b60;
+}
+
+.footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr 1fr 1.3fr;
+    gap: 22px;
+    padding: 32px 0;
+}
+
+.footer-logo {
+    display: inline-block;
+    color: #654b60;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.footer-logo span {
+    color: #b77e9d;
+}
+
+.footer-brand p,
+.footer-social p,
+.footer-payment p {
+    color: #82717e;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.footer-brand p {
+    max-width: 210px;
+    margin-top: 12px;
+}
+
+.footer-column,
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.footer-column h3,
+.footer-social h3,
+.footer-payment h3 {
+    margin: 3px 0 5px;
+    color: #654b60;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.footer-column a,
+.footer-social-links a {
+    color: #82717e;
+    font-size: 11px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-column a:hover,
+.footer-social-links a:hover,
+.footer-bottom a:hover {
+    color: #b77e9d;
+}
+
+.footer-social p {
+    margin: 0;
+}
+
+.footer-social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.footer-payment {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    padding: 22px 0;
+    border-top: 1px solid #e8dce4;
+}
+
+.footer-payment p {
+    margin: 3px 0 0;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 0;
+    border-top: 1px solid #e8dce4;
+}
+
+.footer-bottom p,
+.footer-bottom a {
+    margin: 0;
+    color: #948491;
+    font-size: 10px;
+    text-decoration: none;
+}
+/* RESPONSIVIDADE — CELULAR */
+@media (max-width: 480px) {
+    .site-footer {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    .footer-top {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px 16px;
+    }
+
+    .footer-payment {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .footer-bottom {
+        flex-wrap: wrap;
+    }
+}

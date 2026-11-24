@@ -1,0 +1,227 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HERO */
+
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  isolation: auto;
+  z-index: 2;
+}
+/* VIDEO DE FUNDO */
+
+.hero-video {
+  position:absolute;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+  z-index: -2;
+}
+
+/* ESCURECIMENTO SUAVE À ESQUERDA */
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.58) 0%,
+    rgba(0, 0, 0, 0.38) 30%,
+    rgba(0, 0, 0, 0.18) 58%,
+    transparent 100%
+  );
+}
+
+/* NAVEGAÇÃO */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  padding: 10px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  mix-blend-mode: difference;
+  color: white;
+}
+
+.logo {
+
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: -1.5px;
+    color: rgb(85, 84, 84);
+    mix-blend-mode: difference;
+    z-index: 9999;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+  color: rgb(85, 84, 84);
+  mix-blend-mode: difference;
+  
+}
+
+.nav-links a:hover {
+  opacity: 0.65;
+}
+
+/* TEXTO DO HERO */
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  width: min(600px, 90%);
+  margin-left: 5%;
+  padding-top: 60px;
+  color: white;
+  mix-blend-mode: difference;
+}
+
+.hero-eyebrow {
+  margin-bottom: 24px;
+  font-size: 11px;
+  letter-spacing: 4px;
+  line-height: 1.8;
+  font-weight: 600;
+}
+
+.hero-content h1 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(42px, 6vw, 76px);
+  font-weight: normal;
+  line-height: 1.0;
+  letter-spacing: -2px;
+  color: white;
+  mix-blend-mode: difference;
+}
+
+.hero-description {
+  max-width: 390px;
+  margin-top: 24px;
+  font-size: 14px;
+  line-height: 1.8;
+  color: white;
+
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 470px) {
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 16px 5%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 7px;
+    z-index: 10;
+  }
+
+  .logo {
+    font-size: 17px;
+    flex-shrink: 0;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px 12px;
+    max-width: 58%;
+  }
+
+  .nav-links a {
+    font-size: 9px;
+  }
+
+  
+.hero {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.hero-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  position: relative;
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-content {
+  position: absolute;
+  top: 35%;
+  left: 6%;
+  right: 6%;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+}
+
+
+  .hero-content h1 {
+    font-size: clamp(18px, 8vw, 26px);
+    letter-spacing: -1px;
+    margin: 10px 0;
+  }
+
+  .hero-content p {
+    font-size: 8px;
+    line-height: 1.5;
+    max-width: 90%;
+  }
+}

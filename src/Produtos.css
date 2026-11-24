@@ -1,0 +1,280 @@
+
+/* =========================
+   VITRINE DE PRODUTOS
+========================= */
+
+#produtos {
+    padding: 0 4%;
+    background: var(--color-background);
+    scroll-margin-top: 20px;
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.section-eyebrow {
+    margin: 0 0 7px;
+    color:  margin: auto 0 10px;
+    color: var(--color-text);
+    font-size: 13px;
+    font-weight: 700;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.section-heading h2,
+.cart-section h2 {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 27px;
+    font-weight: 500;
+}
+
+/* Quatro cards por linha */
+
+#produtos .products {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+    width: 100%;
+    align-items: stretch;
+}
+
+/* =========================
+   CARD DO PRODUTO
+========================= */
+
+#produtos .product-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: 10px;
+    gap: 0;
+    background: var(--color-card);
+    border: 1px solid var(--color-border);
+    border-radius: 7px;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease;
+}
+
+#produtos .product-card:hover {
+    border-color: #d9c5d4;
+}
+.favorite-button {
+    position: absolute;
+    top: 4px;
+    right: 14px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border: none;
+    justify-content: center;
+    background: #fff;
+    color: #b8a3ad;
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.favorite-button:hover {
+    color: #e89aaa;
+    border-color: #e89aaa;
+}
+
+.favorite-button.active {
+    color: #e89aaa;
+    border-color: #e89aaa;
+    background: #fff5f7;
+}
+/* Foto quadrada e centralizada */
+
+#produtos .product-image-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    padding: 5px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 4px;
+}
+
+#produtos .product-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* Categoria */
+
+#produtos .product-category {
+    margin: 10px 0 4px;
+    color: var(--color-muted);
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Nome do produto */
+
+#produtos .product-card h3 {
+    margin: 0 0 12px;
+    color: var(--color-text);
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.product-rating {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 0 0 8px;
+    font-size: 12px;
+}
+
+.rating-stars {
+    color: #d6a64f;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.rating-score {
+    color: var(--color-text);
+    font-weight: 600;
+}
+
+
+/* Preço */
+
+#produtos .product-price {
+    margin: auto 0 10px;
+    color: var(--color-text);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+/* Estoque */
+
+#produtos .low-stock,
+#produtos .out-of-stock {
+    margin: 0 0 8px;
+    font-size: 9px;
+    line-height: 1.4;
+}
+
+#produtos .low-stock {
+    color: #98702b;
+}
+
+#produtos .out-of-stock {
+    color: #b23a48;
+}
+
+/* Busca de produtos */
+
+.product-search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 40px;
+    padding: 9px 13px;
+
+    box-sizing: border-box;
+    border: 1px solid #e9dce5;
+    border-radius: 5px;
+    background: #fff;
+    color: #b98eaa;
+    transition: border-color 0.2s ease;
+}
+
+.product-search:focus-within {
+    border-color: #b98eaa;
+}
+
+.product-search span {
+    font-size: 18px;
+    line-height: 1;
+}
+
+.product-search input {
+    width: 100%;
+    min-width: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+
+    color: var(--color-text);
+    font-family: inherit;
+    font-size: 11px;
+}
+
+.product-search input::placeholder {
+    color: var(--color-muted);
+}
+/* RESPONSIVIDADE — CELULAR */
+@media (max-width: 480px) {
+    #produtos .products {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    #produtos .product-card {
+        min-width: 0;
+        padding: 8px;
+    }
+
+    #produtos .product-card h3 {
+        overflow-wrap: anywhere;
+    }
+
+    #produtos .add-cart-button {
+        min-height: 36px;
+        padding: 8px 4px;
+        font-size: 10px;
+        overflow-wrap: anywhere;
+    }
+
+    .section-heading {
+        gap: 8px;
+    }
+
+    .products-heading-title {
+        flex: 1 1 100%;
+        min-width: 0;
+    }
+
+    .product-search {
+        order: 3;
+        flex: 1 1 100%;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        margin: 0 auto 32px;
+        padding: 8px 11px;
+    }
+
+    .cart-link {
+        flex-shrink: 0;
+    }
+}

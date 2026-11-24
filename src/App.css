@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+:root {
+    --color-background: #faf8f9;
+    --color-card: #ffffff;
+    --color-text: #302830;
+    --color-muted: #887b86;
+    --color-accent: #8a687f;
+    --color-button: #f1e7ee;
+    --color-button-hover: #e7d8e3;
+    --color-border: #eee5eb;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--color-text);
+    background: var(--color-background);
+}
+
+button,
+a {
+    font-family: inherit;
+}
+.store-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 30px 0;
+}
+
+.store-tabs button {
+    padding: 10px 0;
+    border: none;
+    border-bottom: 2px solid transparent;
+    background: transparent;
+    color: #777;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.store-tabs button.active {
+    color: #e89aaa;
+    border-bottom-color: #e89aaa;
+}
+/* video blush  */
+
+
+.blush-hero {
+  margin-top: 30px;
+  position: relative;
+  width: 100%;
+  height: 115vh;
+  overflow: hidden;
+  background: #f8f5f2;
+
+}
+
+.blush-video {
+  width: 100%;
+  height: 120vh;
+  object-fit: cover;
+  display: block;
+}
+
+.blush-info {
+  position: absolute;
+  top: 30%;
+  left: 6%;
+  transform: translateY(-50%);
+  width: 240px;
+  z-index: 2;
+  color: #292321;
+  text-align: left;
+}
+
+.blush-label {
+  display: block;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+
+.blush-info h1 {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: -0.8px;
+  margin: 0 0 16px;
+}
+
+.blush-shade {
+  font-size: 9px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+.blush-description {
+  max-width: 210px;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 1.8;
+  color: #625954;
+}
+
+/* TABLET */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .blush-hero {
+    height: 500px;
+  }
+
+  .blush-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .blush-info {
+    left: 6%;
+    width: 35%;
+  }
+}
+
+/* CELULAR */
+@media (max-width: 480px) {
+  .blush-hero {
+    height: 480px;
+  }
+
+  .blush-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .blush-info {
+    left: 5%;
+    width: 175px;
+  }
+
+  .blush-info h1 {
+    font-size: 20px;
+  }
+
+  .blush-description {
+    max-width: 165px;
+    font-size: 10px;
+    line-height: 1.5;
+  }
+}
