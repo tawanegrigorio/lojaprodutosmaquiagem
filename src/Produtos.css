@@ -20,9 +20,9 @@
     margin: 0 0 7px;
     color:  margin: auto 0 10px;
     color: var(--color-text);
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 700;
-    font-size: 9px;
+    font-size: 15px;
     font-weight: 700;
     letter-spacing: 2px;
 }
@@ -31,7 +31,7 @@
 .cart-section h2 {
     margin: 0;
     font-family: 'Playfair Display', serif;
-    font-size: 27px;
+    font-size: 35px;
     font-weight: 500;
 }
 
@@ -78,7 +78,7 @@
     justify-content: center;
     background: #fff;
     color: #b8a3ad;
-    font-size: 25px;
+    font-size: 35px;
     cursor: pointer;
     transition: all 0.2s ease;
 }
@@ -120,7 +120,7 @@
 #produtos .product-category {
     margin: 10px 0 4px;
     color: var(--color-muted);
-    font-size: 8px;
+    font-size: 15px;
     font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -131,7 +131,7 @@
 #produtos .product-card h3 {
     margin: 0 0 12px;
     color: var(--color-text);
-    font-size: 11px;
+    font-size: 19px;
     font-weight: 500;
     line-height: 1.5;
     overflow-wrap: anywhere;
@@ -144,12 +144,12 @@
     flex-wrap: wrap;
     gap: 6px;
     margin: 0 0 8px;
-    font-size: 12px;
+    font-size: 17px;
 }
 
 .rating-stars {
     color: #d6a64f;
-    font-size: 12px;
+    font-size: 25px;
     letter-spacing: 1px;
 }
 
@@ -164,7 +164,7 @@
 #produtos .product-price {
     margin: auto 0 10px;
     color: var(--color-text);
-    font-size: 13px;
+    font-size: 18px;
     font-weight: 700;
 }
 
@@ -174,7 +174,7 @@
 #produtos .low-stock,
 #produtos .out-of-stock {
     margin: 0 0 8px;
-    font-size: 9px;
+    font-size: 18px;
     line-height: 1.4;
 }
 
@@ -185,6 +185,11 @@
 #produtos .out-of-stock {
     color: #b23a48;
 }
+  #produtos .add-cart-button {
+    margin: 0 0 8px;
+    font-size: 18px;
+    border-radius: 10px;
+  }
 
 /* Busca de produtos */
 
@@ -192,12 +197,10 @@
     display: flex;
     align-items: center;
     gap: 8px;
-
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
     margin: 0 auto 40px;
     padding: 9px 13px;
-
     box-sizing: border-box;
     border: 1px solid #e9dce5;
     border-radius: 5px;
@@ -211,7 +214,7 @@
 }
 
 .product-search span {
-    font-size: 18px;
+    font-size: 30px;
     line-height: 1;
 }
 
@@ -222,10 +225,9 @@
     border: none;
     outline: none;
     background: transparent;
-
     color: var(--color-text);
     font-family: inherit;
-    font-size: 11px;
+    font-size: 17px;
 }
 
 .product-search input::placeholder {

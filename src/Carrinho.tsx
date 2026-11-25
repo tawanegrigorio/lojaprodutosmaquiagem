@@ -74,7 +74,6 @@ export default function Carrinho(p: any) {
 
                         <p className="section-eyebrow">PAGAMENTO</p>
 
-                        <h2>Pagamento</h2>
 
                         <p className="payment-subtitle">
                             Escolha uma forma de pagamento.

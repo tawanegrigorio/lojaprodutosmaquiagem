@@ -21,7 +21,7 @@
     display: inline-block;
     color: #654b60;
     font-family: 'Playfair Display', Georgia, serif;
-    font-size: 24px;
+    font-size: 34px;
     font-weight: 600;
     text-decoration: none;
 }
@@ -34,8 +34,8 @@
 .footer-social p,
 .footer-payment p {
     color: #82717e;
-    font-size: 11px;
-    line-height: 1.5;
+    font-size: 18px;
+    line-height: 1.2;
 }
 
 .footer-brand p {
@@ -56,14 +56,14 @@
 .footer-payment h3 {
     margin: 3px 0 5px;
     color: #654b60;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: 600;
 }
 
 .footer-column a,
 .footer-social-links a {
     color: #82717e;
-    font-size: 11px;
+    font-size: 18px;
     text-decoration: none;
     transition: color 0.2s ease;
 }
@@ -109,7 +109,7 @@
 .footer-bottom a {
     margin: 0;
     color: #948491;
-    font-size: 10px;
+    font-size: 18px;
     text-decoration: none;
 }
 /* RESPONSIVIDADE — CELULAR */
