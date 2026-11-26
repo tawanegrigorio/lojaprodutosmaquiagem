@@ -422,6 +422,8 @@
     font-size: 15px;
     letter-spacing: 0.3px;
     text-transform: uppercase;
+    margin-top: 10%;
+    margin-bottom: 2%;
 }
 
 /* =========================
@@ -488,6 +490,7 @@
 
 .purchase-success {
     padding: 25px 5px;
+    margin-top: 50%;
     text-align: center;
 }
 

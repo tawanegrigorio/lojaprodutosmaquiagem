@@ -4,18 +4,7 @@ import "./Sobre.css";
 function Sobre() {
     return (
         <section id="sobre" className="about-section">
-            <div className="about-video">
-                <video
-                    src="/video/video.mp4"
-                    poster="/imagens/capa.jpg"
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    preload="metadata"
-                />
-            </div>
-
+          
             <div className="about-content">
                 <p className="about-eyebrow">NOSSA ESSÊNCIA</p>
 
@@ -45,6 +34,18 @@ function Sobre() {
 
                 <p className="about-signature">COSBEAUTY</p>
             </div>
+              <div className="about-video">
+                <video
+                    src="/video/video.mp4"
+                    poster="/imagens/capa.jpg"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    preload="metadata"
+                />
+            </div>
+
         </section>
     );
 }

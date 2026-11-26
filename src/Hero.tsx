@@ -21,6 +21,17 @@ function Hero({ setCarrinhoAberto }: HeroProps) {
           type="video/mp4"
         />
       </video>
+          <video
+      className="hero-video-mobile"
+      autoPlay
+      muted
+      loop
+      playsInline> 
+      <source
+              src="/video/hero-vertical.mp4"
+              type="video/mp4"
+            />
+    </video>
 
       <div className="hero-overlay"></div>
 
@@ -32,7 +43,7 @@ function Hero({ setCarrinhoAberto }: HeroProps) {
 
         <div className="nav-links">
           <a href="#produtos">Produtos</a>
-          <a href="#sobre">Sobre a marca</a>
+          <a href="#sobre">Sobre</a>
           <a
             href="#carrinho"
             onClick={(event) => {

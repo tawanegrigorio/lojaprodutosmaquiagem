@@ -118,6 +118,14 @@
         padding-right: 5%;
         padding-left: 5%;
     }
+    .footer-logo {
+        font-size: 22px;
+    }
+    .footer-column, .footer-bottom{
+        font-size: 18px;
+         flex-wrap: wrap;
+    }
+
 
     .footer-top {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -129,7 +137,5 @@
         gap: 18px;
     }
 
-    .footer-bottom {
-        flex-wrap: wrap;
-    }
+ 
 }

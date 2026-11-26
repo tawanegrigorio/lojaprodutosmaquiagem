@@ -304,6 +304,9 @@ function removerFavorito(id: number) {
             <video autoPlay muted loop playsInline className="blush-video">
                 <source src="/video/videoblush.mp4" type="video/mp4" />
             </video>
+               <video autoPlay muted loop playsInline className="blush-video-vertical">
+                <source src="/video/videoblush-vertical.mp4" type="video/mp4" />
+            </video>
 
             <div className="blush-info">
                 <span className="blush-label">M·A·C COSMETICS</span>

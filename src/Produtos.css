@@ -239,6 +239,13 @@
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 12px;
     }
+    h2 {
+        margin-bottom: 62px;
+        font-size: 15px;
+    }
+    .cart-link {
+          margin-bottom: 32px;
+    }
 
     #produtos .product-card {
         min-width: 0;
@@ -247,12 +254,15 @@
 
     #produtos .product-card h3 {
         overflow-wrap: anywhere;
+        font-size: 14px;
     }
-
+    .favorite-button{
+        font-size: 15px;
+    }
     #produtos .add-cart-button {
         min-height: 36px;
         padding: 8px 4px;
-        font-size: 10px;
+        font-size: 13px;
         overflow-wrap: anywhere;
     }
 
